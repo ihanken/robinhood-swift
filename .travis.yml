@@ -4,10 +4,6 @@ branches:
   only:
     - develop
     - master
-
-before_script:
-  - bundle exec danger
-
+    
 script:
-  - swift package update
-  - swift test
+  - fastlane ci

@@ -17,6 +17,8 @@ default_platform(:swift)
 
 platform :swift do
     before_all do
+        setup_travis
+        bundle_install
         spm(command: "update")
     end
 
