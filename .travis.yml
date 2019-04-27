@@ -1,13 +1,12 @@
 language: swift
 
 branches:
-  only:
-    - develop
-    - master
+    only:
+        - develop
+        - master
 
- before_install:
-  - gem update --system
-  - gem install bundler
+    before_install:
+        - gem update --system
+        - gem install bundler
 
-script:
-  - fastlane ci
+script: fastlane ci
