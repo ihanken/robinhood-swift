@@ -9,6 +9,5 @@ branches:
   - gem update --system
   - gem install bundler
 
-
 script:
   - fastlane ci
